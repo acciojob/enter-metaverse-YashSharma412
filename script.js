@@ -6,6 +6,6 @@ button.addEventListener("click", ()=>{
 	let h1 = document.createElement("h1");
 	h1.innerText = "Entered Metaverse";
 	h1.id = "status";
-	document.body.insertBefore(h1, button);
-	para.remove();
+	
+	para.parentNode.replaceChild(h1, para);
 })
